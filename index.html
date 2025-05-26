@@ -12,23 +12,44 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/392858309f.js" crossorigin="anonymous"></script>
     <!-- Tailwind css cdn -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-
+    </script>
 </head>
 
 <body>
-
+    <!-- header section -->
+    <header class="w-4/5 mx-auto pt-4 sm:flex gap-8">
+        <!-- left-side -->
+        <div class="sm:w-1/2 mt-4">
+            <h1 class="text-[#1C1C1C] sm:text-7xl text-5xl font-bold text-left">It's good <br>
+                tea time at The <br> Tea House</h1>
+            <p class="text-[#777777] text-sm mt-4 text-left">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="rounded-xl bg-gradient-to-r from-[#FF0000] to-[#FF8938] p-4 text-[#FFFFFF] mt-4 flex gap-2 items-center ">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+        </div>
+        <!-- right side -->
+         <div class="sm:w-2/5 mt-12 sm:ml-6 relative">
+            <img src="./images/banner.png" alt="">
+            <div class="rounded-xl p-2 bg-[#FFFFFF] drop-shadow-xl w-40 h-16 flex items-center gap-3 absolute bottom-4 left-16">
+               <div class="text-[#FFC850]">
+                 <i class="fa-solid fa-star "></i>
+               </div>
+                <div>
+                    <h4 class="text-[#1C1C1C] text-2xl font-semibold">5.00</h4>
+                    <p class="text-[#777777] text-sm ">Trust Pilot Ratings</p>
+                </div>
+            </div>
+         </div>
+    </header>
 </body>
 
 </html>
